@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ChuangKeCenter/ChuangKeHomeVC.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    ChuangKeHomeVC * chuangke = [[ChuangKeHomeVC alloc] init];
+    UINavigationController * nav= [[UINavigationController alloc] initWithRootViewController:chuangke];
+    
+    
+    UIWindow * window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    window.rootViewController = nav;
+    
+    
+    self.window = window;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

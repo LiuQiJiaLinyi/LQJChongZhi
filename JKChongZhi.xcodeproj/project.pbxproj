@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		80ABE2DB24A59592AE2FEA37 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC6E4A2BD59B3FD4054CF27 /* libPods.a */; };
+		8257196B1D360C35003DE85D /* ChargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8257196A1D360C35003DE85D /* ChargeVC.m */; };
+		825719711D360DFE003DE85D /* ChargeFailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 825719701D360DFE003DE85D /* ChargeFailVC.m */; };
+		825719741D360E3E003DE85D /* ChagerSusseccVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 825719731D360E3E003DE85D /* ChagerSusseccVC.m */; };
 		82E21B0E1D34C1DC003E5582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E21B0D1D34C1DC003E5582 /* main.m */; };
 		82E21B111D34C1DC003E5582 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E21B101D34C1DC003E5582 /* AppDelegate.m */; };
 		82E21B141D34C1DC003E5582 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E21B131D34C1DC003E5582 /* ViewController.m */; };
@@ -16,6 +19,7 @@
 		82E21B1C1D34C1DC003E5582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E21B1A1D34C1DC003E5582 /* LaunchScreen.storyboard */; };
 		82E21B271D34C1DC003E5582 /* JKChongZhiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E21B261D34C1DC003E5582 /* JKChongZhiTests.m */; };
 		82E21B321D34C1DC003E5582 /* JKChongZhiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E21B311D34C1DC003E5582 /* JKChongZhiUITests.m */; };
+		82E21B461D34E07B003E5582 /* ChuangKeHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E21B451D34E07B003E5582 /* ChuangKeHomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		825719691D360C35003DE85D /* ChargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChargeVC.h; sourceTree = "<group>"; };
+		8257196A1D360C35003DE85D /* ChargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChargeVC.m; sourceTree = "<group>"; };
+		8257196F1D360DFE003DE85D /* ChargeFailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChargeFailVC.h; sourceTree = "<group>"; };
+		825719701D360DFE003DE85D /* ChargeFailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChargeFailVC.m; sourceTree = "<group>"; };
+		825719721D360E3E003DE85D /* ChagerSusseccVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChagerSusseccVC.h; sourceTree = "<group>"; };
+		825719731D360E3E003DE85D /* ChagerSusseccVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChagerSusseccVC.m; sourceTree = "<group>"; };
 		82E21B091D34C1DC003E5582 /* JKChongZhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKChongZhi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E21B0D1D34C1DC003E5582 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82E21B0F1D34C1DC003E5582 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +62,8 @@
 		82E21B2D1D34C1DC003E5582 /* JKChongZhiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKChongZhiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E21B311D34C1DC003E5582 /* JKChongZhiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKChongZhiUITests.m; sourceTree = "<group>"; };
 		82E21B331D34C1DC003E5582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82E21B441D34E07B003E5582 /* ChuangKeHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChuangKeHomeVC.h; sourceTree = "<group>"; };
+		82E21B451D34E07B003E5582 /* ChuangKeHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChuangKeHomeVC.m; sourceTree = "<group>"; };
 		92C576018531BBB591B3C28B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B9478737C68D5FD2993126D6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BFC6E4A2BD59B3FD4054CF27 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +120,7 @@
 		82E21B0B1D34C1DC003E5582 /* JKChongZhi */ = {
 			isa = PBXGroup;
 			children = (
+				82E21B431D34E03D003E5582 /* ChuangKeCenter */,
 				82E21B0F1D34C1DC003E5582 /* AppDelegate.h */,
 				82E21B101D34C1DC003E5582 /* AppDelegate.m */,
 				82E21B121D34C1DC003E5582 /* ViewController.h */,
@@ -145,6 +158,21 @@
 				82E21B331D34C1DC003E5582 /* Info.plist */,
 			);
 			path = JKChongZhiUITests;
+			sourceTree = "<group>";
+		};
+		82E21B431D34E03D003E5582 /* ChuangKeCenter */ = {
+			isa = PBXGroup;
+			children = (
+				82E21B441D34E07B003E5582 /* ChuangKeHomeVC.h */,
+				82E21B451D34E07B003E5582 /* ChuangKeHomeVC.m */,
+				825719691D360C35003DE85D /* ChargeVC.h */,
+				8257196A1D360C35003DE85D /* ChargeVC.m */,
+				8257196F1D360DFE003DE85D /* ChargeFailVC.h */,
+				825719701D360DFE003DE85D /* ChargeFailVC.m */,
+				825719721D360E3E003DE85D /* ChagerSusseccVC.h */,
+				825719731D360E3E003DE85D /* ChagerSusseccVC.m */,
+			);
+			path = ChuangKeCenter;
 			sourceTree = "<group>";
 		};
 		A8791C72639451F6DCA5377F /* Frameworks */ = {
@@ -234,6 +262,7 @@
 				TargetAttributes = {
 					82E21B081D34C1DC003E5582 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 4T628VP2RU;
 					};
 					82E21B211D34C1DC003E5582 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -345,9 +374,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825719711D360DFE003DE85D /* ChargeFailVC.m in Sources */,
+				825719741D360E3E003DE85D /* ChagerSusseccVC.m in Sources */,
 				82E21B141D34C1DC003E5582 /* ViewController.m in Sources */,
 				82E21B111D34C1DC003E5582 /* AppDelegate.m in Sources */,
 				82E21B0E1D34C1DC003E5582 /* main.m in Sources */,
+				8257196B1D360C35003DE85D /* ChargeVC.m in Sources */,
+				82E21B461D34E07B003E5582 /* ChuangKeHomeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,10 +522,13 @@
 			baseConfigurationReference = B9478737C68D5FD2993126D6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = JKChongZhi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JK.JKChongZhi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -501,10 +537,13 @@
 			baseConfigurationReference = 92C576018531BBB591B3C28B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = JKChongZhi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JK.JKChongZhi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
