@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#define kFloatMainSize [UIScreen mainScreen].bounds.size.width/320.f
 @interface ChagerSusseccVC : UIViewController
-
+@property (nonatomic ,copy)NSString * str_Paymoney;
 @end

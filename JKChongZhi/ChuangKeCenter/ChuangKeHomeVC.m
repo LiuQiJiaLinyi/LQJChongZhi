@@ -12,17 +12,23 @@
 @interface ChuangKeHomeVC ()<UIWebViewDelegate>
 {
     UIButton * recharge;
+    UIWebView *web;
 }
 @end
 
 @implementation ChuangKeHomeVC
 
+- (void)loadView{
+    web = [[UIWebView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.view = web;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self addRechargeBut];
     
-    // Do any additional setup after loading the view.
 }
 
 -(void)addRechargeBut
@@ -32,34 +38,37 @@
     [recharge setBackgroundColor:[UIColor colorWithRed:1.000 green:0.671 blue:0.000 alpha:1.00]];
     [recharge setTitle:@"充值" forState:UIControlStateNormal];
     recharge.layer.masksToBounds = YES;
-    recharge.layer.cornerRadius = recharge.bounds.size.width/2;
+    recharge.layer.cornerRadius = 5;
     
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 0, 0, 0, 1 });
-    recharge.layer.borderColor = [UIColor whiteColor].CGColor;
+    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 1, 1, 1, 1 });
+    
+    recharge.layer.borderColor = colorref;
   
     recharge.layer.borderWidth = 2* kFloatMainSize;
     [recharge addTarget:self action:@selector(charge) forControlEvents:UIControlEventTouchUpInside];
     
-    UIWebView * backView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-    backView.delegate = self;
-    [backView setOpaque:YES];
-    [backView setScalesPageToFit:YES];
-    [backView.scrollView addSubview:recharge];
-    [backView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
-    [self.view addSubview:backView];
+    web.delegate = self;
+    [web setOpaque:YES];
+    [web setScalesPageToFit:YES];
+    [web.scrollView addSubview:recharge];
+    
+    [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://baidu.com/"]]];
+   
     
     
 }
 
 -(void)charge
 {
-    NSLog(@"charge点击事件");
+
     ChargeVC * charge = [[ChargeVC alloc] init];
     [self.navigationController pushViewController:charge animated:YES];
     
 }
 
+#pragma mark-
+#pragma mark ––––webview代理方法–––––
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     
     NSLog(@"webViewDidStartLoad");
@@ -79,7 +88,7 @@
 }
 -(void)setWebView_string:(NSString *)webView_string
 {
-
+    _webView_string = webView_string;
 }
 
 - (void)didReceiveMemoryWarning {

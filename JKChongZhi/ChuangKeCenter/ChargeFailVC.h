@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ChargeFailVC : UIViewController
-
+@property (nonatomic ,copy)NSString * str_failMoney;
 @end
